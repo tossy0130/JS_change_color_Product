@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <title>Midさん サンプルページ</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- 
+        <link href="css/style.css" rel="stylesheet">
+        -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="./js/main.js"></script>
+
+        <style>
+            body {font-family: "Helvetica Neue",Arial,
+    "Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,sans-serif;}
+
+            img {width: 100%; height: auto;}
+
+            .show {display: block;}
+            .img_hide {display: none;}
+            .flex{display: flex;width: 1200px;margin: 0 auto;}
+            .flex > div:nth-child(1) {width: 55%;}
+            .flex > div:nth-child(2) {width: 40%;}
+
+            .main_image {list-style: none;}
+
+
+            /*================ 右側コンテンツ ================*/
+            /* === ボタン （テーブル用） */
+            .btn_table {
+                display: flex;list-style: none;margin: 0 0 0 8px;
+            }
+
+            .btn_table > li{margin: 0 0.2em}
+            .t_color_img {width: 60%;height: auto;}
+
+            h2.t_title {
+                background: #4A4E4F;margin: 0 0px 35px 50px;
+            }
+
+            h2.t_title > p:nth-child(1) {font-size: 21px;color: #fff;
+    border-bottom: dotted 1px #fff;padding: 5px 0px;margin: 10px 25px;}
+
+            h2.t_title > p:nth-child(2) {font-size: 18px;color: #fff;padding: 3px 0;margin: 0 0 0px 25px;}
+            
+            .mini_title {margin: 15px 0 15px 50px;}
+
+            /* === 脚　カラー === */
+            .btn_ashi { display: flex;list-style: none;margin: 0 0 0 8px;}
+            .btn_ashi > li{margin: 0 0.2em}
+
+            /* === フレームタイプ === */
+            .f_type {display: flex;}
+
+            .button003 {
+                margin: 15px 10px 0px 25px;
+            }
+
+            .button003 a {background: transparent;border-radius: 15px;
+        position: relative;justify-content: space-around;align-items: center;
+        padding: 20px 40px;color: #313133;transition: 0.3s ease-in-out;
+        font-weight: 500;text-decoration: none;border: 2px solid #999;
+        margin: 0px 15px;font-size: 13px;
+        }
+
+        .button003 a:hover {
+                background: #313131;
+                color: #FFF;
+        }
+
+        .button001 {
+    }
+
+    .button001 a {
+        text-decoration: none;
+        text-align: center;
+        display: block;
+        color: #333;
+        background: transparent;border-radius: 15px;
+        position: relative;justify-content: space-around;
+        align-items: center;padding: 20px 40px;color: #313133;
+        transition: 0.3s ease-in-out;font-weight: 500;
+        text-decoration: none;border: 2px solid #999;
+        margin: 0px 15px;font-size: 13px;top: 77px;
+        width: 55%;left: 5%;text-decoration: none;
+        text-align: center;
+    }
+
+         .button001 a:hover {
+                background: #313131;
+                color: #FFF;
+        }
+
+        </style>
+
+    </head>
+    <body>
+
+      <div class="container">
+        <div class="flex">
+            
+            <div>
+            <ul id="main_image" class="main_image">
+                <li class="img_hide"><img src="./img/t_bulue.png"></li>
+                <li class="img_hide"><img src="./img/t_gleen.png"></li>
+                <li class="img_hide"><img src="./img/t_red.png"></li>
+                <li class="img_hide"><img src="./img/t_yellow.png"></li>
+                <li class="img_hide"><img src="./img/t_bulue.png"></li>
+                <li class="img_hide"><img src="./img/t_gleen.png"></li>
+                <li class="img_hide"><img src="./img/t_red.png"></li>
+                <li class="img_hide"><img src="./img/t_yellow.png"></li>
+                <li class="img_hide"><img src="./img/t_ashi/red_glay.png"></li>
+                <li class="img_hide"><img src="./img/t_ashi/bulue_glay.png"></li>
+            </ul>
+            </div>
+
+            <!-- 右側コンテンツ  -->
+            <div>
+
+            <h2 class="t_title">
+                <p>テーブルロータイプ</p>
+                <p>G-Tellus</p>
+            </h2>
+            
+            <!-- テーブルカラー  -->
+            <p class="mini_title">テーブルカラー</p>
+            <ul id="btn" class="btn_table">
+                <li><img src="./img/t_color/t_01.jpg" class="t_color_img"></li>
+                <li><img src="./img/t_color/t_02.jpg" class="t_color_img"></li>
+                <li><img src="./img/t_color/t_03.jpg" class="t_color_img"></li>
+                <li><img src="./img/t_color/t_04.jpg" class="t_color_img"></li>
+                <li><img src="./img/t_color/t_01.jpg" class="t_color_img"></li>
+                <li><img src="./img/t_color/t_02.jpg" class="t_color_img"></li>
+                <li><img src="./img/t_color/t_03.jpg" class="t_color_img"></li>
+                <li><img src="./img/t_color/t_04.jpg" class="t_color_img"></li>
+            </ul>
+
+            <!-- 脚カラー  -->
+            <p class="mini_title">脚カラー</p>
+            <ul id="btn_ashi" class="btn_ashi">
+                <li><img src="./img/t_ashi/t_ashi_glay.jpg" class="t_color_img"></li>
+                <li><img src="./img/t_ashi/t_ashi_block.jpg" class="t_color_img"></li>
+                <li><img src="./img/t_color/t_03.jpg" class="t_color_img"></li>
+            </ul>
+
+            <!-- フレームタイプ -->
+            <p class="mini_title">フレームタイプ</p>
+            <div class="f_type">
+                <div class="button003">
+                    <a href="#">シルバー</a>
+                </div>
+
+                <div class="button003">
+                    <a href="#">ホワイト</a>
+                </div>
+            </div>
+
+            <div class="button001">
+                    <a href="#">お問い合わせ</a>
+            </div>
+
+            </div> <!-- 右コンテンツ　END -->
+
+        </div>
+    </div>
+
+    </body>
+</html>
